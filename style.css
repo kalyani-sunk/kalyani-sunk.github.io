@@ -275,3 +275,8 @@ footer {
     font-style: italic;
     color: #6b7280;
 }
+/* EDUCATION */
+
+.education-card {
+    margin-bottom: 25px;
+}
