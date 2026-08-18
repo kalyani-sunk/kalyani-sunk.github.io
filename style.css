@@ -226,15 +226,76 @@ section p {
 
 
 /* =========================
-   EDUCATION
+   EDUCATION SECTION
 ========================= */
 
-.education-card {
-    margin-bottom: 35px;
+#education {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 25px 90px;
 }
 
-#education .education-card + .education-card {
-    margin-top: 35px;
+.education-title {
+    text-align: center;
+    font-size: 44px;
+    color: #111827;
+    margin-bottom: 55px;
+}
+
+.education-card {
+    background: white;
+    border-radius: 14px;
+    padding: 35px 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.education-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.education-school {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.education-card p {
+    font-size: 18px;
+    margin: 3px 0;
+    color: #111827;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .education-title {
+        font-size: 34px;
+        margin-bottom: 35px;
+    }
+
+    .education-card {
+        padding: 28px 20px;
+    }
+
+    .education-card h3 {
+        font-size: 21px;
+    }
+
+    .education-school {
+        font-size: 17px;
+    }
+
+    .education-card p {
+        font-size: 16px;
+    }
 }
 
 
