@@ -6,31 +6,57 @@ body {
     line-height: 1.6;
 }
 
-/* NAVIGATION */
 
-nav {
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
     background: white;
-    padding: 16px 20px;
-    text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-nav a {
-    margin: 0 14px;
-    text-decoration: none;
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-name {
+    font-size: 20px;
+    font-weight: 700;
     color: #111827;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #111827;
+    text-decoration: none;
     font-weight: 600;
+    font-size: 15px;
 }
 
-nav a:hover {
-    opacity: 0.7;
+.nav-links a:hover {
+    color: #2563eb;
 }
 
 
-/* HERO SECTION */
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero {
     background: #111827;
@@ -101,7 +127,9 @@ nav a:hover {
 }
 
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
 
 .button {
     display: inline-block;
@@ -112,52 +140,59 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.primary-button {
-    background: white;
-    color: #111827;
-}
-
-.primary-button:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-}
-
+.primary-button,
 .secondary-button {
-    border: 1px solid #9ca3af;
-    color: white;
-    background: transparent;
-}
-
-.secondary-button:hover {
     background: white;
     color: #111827;
-    transform: translateY(-2px);
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    background: #f3f4f6;
+    color: #111827;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 
-/* GENERAL SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 55px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 25px;
 }
 
 section h2 {
     color: #111827;
     font-size: 30px;
+    margin-top: 0;
     margin-bottom: 25px;
 }
 
-
-/* SKILLS AND PROJECTS */
-
-.skills-grid,
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 22px;
+section p {
+    margin-top: 0;
 }
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
 
 .card {
     background: white;
@@ -172,7 +207,74 @@ section h2 {
 }
 
 
-/* LINKS INSIDE SECTIONS */
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-card {
+    margin-bottom: 35px;
+}
+
+.experience-card ul {
+    padding-left: 22px;
+}
+
+.experience-card li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card {
+    margin-bottom: 35px;
+}
+
+#education .education-card + .education-card {
+    margin-top: 35px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .button {
+    margin-top: auto;
+    width: fit-content;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+    color: #4b5563;
+    font-size: 17px;
+}
+
+.project-status {
+    margin-top: auto;
+    font-size: 14px;
+    font-style: italic;
+    color: #6b7280;
+}
+
+
+/* =========================
+   LINKS INSIDE SECTIONS
+========================= */
 
 section a {
     color: #2563eb;
@@ -188,7 +290,26 @@ section .button:hover {
 }
 
 
-/* FOOTER */
+/* =========================
+   CONTACT
+========================= */
+
+#contact p {
+    margin-bottom: 14px;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: #111827;
@@ -198,13 +319,21 @@ footer {
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
-    nav a {
-        display: inline-block;
-        margin: 6px 8px;
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
     .hero-container {
@@ -236,51 +365,12 @@ footer {
         width: 170px;
         height: 170px;
     }
-}
-/* EXPERIENCE */
 
-.experience-card {
-    margin-bottom: 35px;
-}
+    section {
+        padding: 45px 20px;
+    }
 
-.experience-card ul {
-    padding-left: 22px;
-}
-
-.experience-card li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-/* PROJECT SECTION */
-
-.section-intro {
-    margin-bottom: 30px;
-    color: #4b5563;
-    font-size: 17px;
-}
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card .button {
-    margin-top: auto;
-    width: fit-content;
-}
-
-.project-status {
-    margin-top: auto;
-    font-size: 14px;
-    font-style: italic;
-    color: #6b7280;
-}
-/* EDUCATION SECTION */
-
-.education-card {
-    margin-bottom: 35px;
-}
-
-.education-card:last-child {
-    margin-bottom: 0;
+    section h2 {
+        font-size: 27px;
+    }
 }
