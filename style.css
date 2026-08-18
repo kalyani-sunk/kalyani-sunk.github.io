@@ -95,3 +95,15 @@ footer {
         margin: 6px;
     }
 }
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid white;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
