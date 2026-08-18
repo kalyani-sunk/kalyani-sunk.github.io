@@ -275,8 +275,12 @@ footer {
     font-style: italic;
     color: #6b7280;
 }
-/* EDUCATION */
+/* EDUCATION SECTION */
 
 .education-card {
     margin-bottom: 35px;
+}
+
+.education-card:last-child {
+    margin-bottom: 0;
 }
