@@ -1,6 +1,36 @@
-/* =========================
-   HERO SECTION
-========================= */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: white;
+    padding: 16px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    margin: 0 14px;
+    text-decoration: none;
+    color: #111827;
+    font-weight: 600;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+
+/* HERO SECTION */
 
 .hero {
     background: #111827;
@@ -57,6 +87,22 @@
     gap: 12px;
 }
 
+.hero-image {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+}
+
+
+/* BUTTONS */
+
 .button {
     display: inline-block;
     padding: 12px 20px;
@@ -88,25 +134,78 @@
     transform: translateY(-2px);
 }
 
-.hero-image {
-    flex-shrink: 0;
+
+/* GENERAL SECTIONS */
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 55px 20px;
 }
 
-.profile-photo {
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-    object-fit: cover;
-
-    border: 5px solid white;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+section h2 {
+    color: #111827;
+    font-size: 30px;
+    margin-bottom: 25px;
 }
+
+
+/* SKILLS AND PROJECTS */
+
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #111827;
+}
+
+
+/* LINKS INSIDE SECTIONS */
+
+section a {
+    color: #2563eb;
+}
+
+section .button {
+    background: #111827;
+    color: white;
+}
+
+section .button:hover {
+    opacity: 0.85;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
 
 /* MOBILE */
 
 @media (max-width: 800px) {
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+    }
 
     .hero-container {
         flex-direction: column-reverse;
