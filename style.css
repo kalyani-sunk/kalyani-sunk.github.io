@@ -225,79 +225,101 @@ section p {
 }
 
 
-/* =========================
-   EDUCATION SECTION
-========================= */
+/* ==================================
+   FINAL EDUCATION DESIGN
+================================== */
 
 #education {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 25px 90px;
+    padding: 70px 25px 90px;
 }
 
-.education-title {
+#education .education-title {
     text-align: center;
     font-size: 44px;
+    font-weight: 700;
     color: #111827;
-    margin-bottom: 55px;
+    margin: 0 0 55px 0;
 }
 
-.education-card {
-    background: white;
+#education .education-card {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    padding: 35px 40px;
+    margin: 0 0 30px 0;
+
     border-radius: 14px;
-    padding: 35px 30px;
-    margin-bottom: 30px;
+
     text-align: center;
 
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.education-card h3 {
+#education .education-card + .education-card {
+    margin-top: 30px;
+}
+
+#education .education-card h3 {
+    margin: 0 0 8px 0;
+
     font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 8px;
+    font-weight: 700;
+
     color: #111827;
 }
 
-.education-school {
+#education .education-school {
+    margin: 0 0 4px 0;
+
     font-size: 19px;
     font-weight: 700;
-    margin-bottom: 4px;
+
+    color: #111827;
 }
 
-.education-card p {
+#education .education-card p {
+    margin: 4px 0;
+
     font-size: 18px;
-    margin: 3px 0;
+
     color: #111827;
 }
 
 
-/* MOBILE */
+/* MOBILE EDUCATION */
 
 @media (max-width: 800px) {
 
-    .education-title {
-    font-size: 34px;
-    margin-bottom: 35px;
-}
+    #education {
+        padding: 50px 20px 70px;
+    }
 
-.education-card {
-    padding: 28px 20px;
-}
+    #education .education-title {
+        font-size: 34px;
+        margin-bottom: 35px;
+    }
 
-.education-card h3 {
-    font-size: 21px;
-}
+    #education .education-card {
+        padding: 28px 20px;
+    }
 
-.education-school {
-    font-size: 17px;
-}
+    #education .education-card h3 {
+        font-size: 21px;
+    }
 
-.education-card p {
-    font-size: 16px;
-}
-}
+    #education .education-school {
+        font-size: 17px;
+    }
 
+    #education .education-card p {
+        font-size: 16px;
+    }
+}
 
 /* =========================
    PROJECTS
