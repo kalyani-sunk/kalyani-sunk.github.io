@@ -277,25 +277,25 @@ section p {
 @media (max-width: 800px) {
 
     .education-title {
-        font-size: 34px;
-        margin-bottom: 35px;
-    }
+    font-size: 34px;
+    margin-bottom: 35px;
+}
 
-    .education-card {
-        padding: 28px 20px;
-    }
+.education-card {
+    padding: 28px 20px;
+}
 
-    .education-card h3 {
-        font-size: 21px;
-    }
+.education-card h3 {
+    font-size: 21px;
+}
 
-    .education-school {
-        font-size: 17px;
-    }
+.education-school {
+    font-size: 17px;
+}
 
-    .education-card p {
-        font-size: 16px;
-    }
+.education-card p {
+    font-size: 16px;
+}
 }
 
 
