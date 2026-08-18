@@ -251,3 +251,27 @@ footer {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+/* PROJECT SECTION */
+
+.section-intro {
+    margin-bottom: 30px;
+    color: #4b5563;
+    font-size: 17px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .button {
+    margin-top: auto;
+    width: fit-content;
+}
+
+.project-status {
+    margin-top: auto;
+    font-size: 14px;
+    font-style: italic;
+    color: #6b7280;
+}
