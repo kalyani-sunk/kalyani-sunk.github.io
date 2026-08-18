@@ -237,3 +237,17 @@ footer {
         height: 170px;
     }
 }
+/* EXPERIENCE */
+
+.experience-card {
+    margin-bottom: 28px;
+}
+
+.experience-card ul {
+    padding-left: 22px;
+}
+
+.experience-card li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
